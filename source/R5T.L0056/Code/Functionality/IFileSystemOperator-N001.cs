@@ -12,6 +12,9 @@ using R5T.T0199;
 
 namespace R5T.L0056.N001
 {
+    /// <summary>
+    /// For file-extension specific functionality.
+    /// </summary>
     [FunctionalityMarker]
     public partial interface IFileSystemOperator : IFunctionalityMarker
     {
