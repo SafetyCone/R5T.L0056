@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 
 using R5T.N0000;
+
 using R5T.T0132;
 using R5T.T0179.Extensions;
 using R5T.T0180;
@@ -20,7 +21,7 @@ namespace R5T.L0056.N000
     public partial interface IFileSystemOperator : IFunctionalityMarker
     {
 #pragma warning disable IDE1006 // Naming Styles
-        private static L0053.IFileSystemOperator _Platform => L0053.FileSystemOperator.Instance;
+        public Platform.IFileSystemOperator _Platform => Platform.FileSystemOperator.Instance;
 #pragma warning restore IDE1006 // Naming Styles
 
 

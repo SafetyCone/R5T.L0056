@@ -45,6 +45,7 @@ namespace R5T.L0056
             return output;
         }
 
+        /// <inheritdoc cref="Get_DocumentationXmlFilePaths_AssumeAllXmls(IDirectoryPath, ITextOutput)"/>
         public IDocumentationXmlFilePath[] Get_DocumentationXmlFilePaths_AssumeAllXmls(
             IDirectoryPath directoryPath)
         {
