@@ -49,6 +49,7 @@ namespace R5T.L0056
                 ITargetFrameworkMonikers.NET_5_Constant => Instances.DotnetMajorVersions.V5,
                 ITargetFrameworkMonikers.NET_6_Constant => Instances.DotnetMajorVersions.V6,
                 ITargetFrameworkMonikers.NET_7_Constant => Instances.DotnetMajorVersions.V7,
+                ITargetFrameworkMonikers.NET_8_Constant => Instances.DotnetMajorVersions.V8,
                 ITargetFrameworkMonikers.NET_App_2_2_Constant => Instances.DotnetMajorVersions.V2,
                 ITargetFrameworkMonikers.NET_App_3_1_Constant => Instances.DotnetMajorVersions.V3,
                 ITargetFrameworkMonikers.Net_Standard2_0_Constant => Instances.DotnetMajorVersions.V2,
