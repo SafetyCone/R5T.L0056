@@ -1,17 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 using R5T.T0132;
+using R5T.T0180;
 using R5T.T0181;
 
 
 namespace R5T.L0056
 {
     [FunctionalityMarker]
-    public partial interface IFileOperator : IFunctionalityMarker
+    public partial interface IFileOperator : IFunctionalityMarker,
+        L0074.IFileOperator
     {
 #pragma warning disable IDE1006 // Naming Styles
-        public L0053.IFileOperator _Platform => L0053.FileOperator.Instance;
+        public new L0053.IFileOperator _Platform => L0053.FileOperator.Instance;
 #pragma warning restore IDE1006 // Naming Styles
 
 
