@@ -93,6 +93,12 @@ namespace R5T.L0056.N000
             return output;
         }
 
+        public bool Exists_File(string filePath)
+        {
+            var output = _Platform.Exists_File(filePath);
+            return output;
+        }
+
         public IFilePath[] Get_ChildFilePaths(
             IDirectoryPath directoryPath,
             IFileExtension fileExtension)

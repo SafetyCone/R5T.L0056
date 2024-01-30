@@ -19,7 +19,7 @@ namespace R5T.L0056
 #pragma warning restore IDE1006 // Naming Styles
 
 
-        /// <inheritdoc cref="L0053.IExecutablePathOperator.Enumerate_AssemblyFilePaths"/>
+        /// <inheritdoc cref="L0066.IExecutablePathOperator.Enumerate_AssemblyFilePaths"/>
         public IEnumerable<IAssemblyFilePath> Enumerate_AssemblyFilePaths()
         {
             var output = _Platform.Enumerate_AssemblyFilePaths()
@@ -30,7 +30,7 @@ namespace R5T.L0056
             return output;
         }
 
-        /// <inheritdoc cref="L0053.IExecutablePathOperator.Get_AssemblyFilePaths"/>
+        /// <inheritdoc cref="L0066.IExecutablePathOperator.Get_AssemblyFilePaths"/>
         public IAssemblyFilePath[] Get_AssemblyFilePaths()
         {
             var output = this.Enumerate_AssemblyFilePaths()
@@ -39,7 +39,7 @@ namespace R5T.L0056
             return output;
         }
 
-        /// <inheritdoc cref="L0053.IExecutablePathOperator.Get_ExecutableFilePath"/>
+        /// <inheritdoc cref="L0066.IExecutablePathOperator.Get_ExecutableFilePath"/>
         public IExecutableFilePath Get_ExecutableFilePath()
         {
             var output = _Platform.Get_ExecutableFilePath()
@@ -58,7 +58,7 @@ namespace R5T.L0056
 
     public partial interface IExecutablePathOperator
     {
-        /// <inheritdoc cref="L0053.IExecutablePathOperator.Get_ExecutableDirectoryPath()"/>
+        /// <inheritdoc cref="L0066.IExecutablePathOperator.Get_ExecutableDirectoryPath()"/>
         public IExecutableDirectoryPath Get_ExecutableDirectoryPath()
         {
             var output = _Platform.Get_ExecutableDirectoryPath()

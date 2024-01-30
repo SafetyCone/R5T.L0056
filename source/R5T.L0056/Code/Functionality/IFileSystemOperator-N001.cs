@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using R5T.L0089.T000;
 using R5T.T0132;
 using R5T.T0179.Extensions;
 using R5T.T0180;
 using R5T.T0180.Extensions;
 using R5T.T0181;
 using R5T.T0181.Extensions;
-using R5T.T0221;
 
 
 namespace R5T.L0056.N001
@@ -21,7 +21,6 @@ namespace R5T.L0056.N001
     {
 #pragma warning disable IDE1006 // Naming Styles
         private static N000.IFileSystemOperator _N000 => N000.FileSystemOperator.Instance;
-        private static L0053.N001.IFileSystemOperator _Platform => L0053.N001.FileSystemOperator.Instance;
 #pragma warning restore IDE1006 // Naming Styles
 
 
@@ -72,7 +71,7 @@ namespace R5T.L0056.N001
         /// </summary>
         public IEnumerable<IDllFilePath> Enumerate_ChildDllFilePaths(IDirectoryPath directoryPath)
         {
-            return _Platform.Enumerate_DllFiles(directoryPath.Value)
+            return Instances.FileSystemOperator._Platform.Enumerate_DllFiles(directoryPath.Value)
                 .To(x => x.ToDllFilePath())
                 ;
         }
@@ -88,7 +87,7 @@ namespace R5T.L0056.N001
         /// </summary>
         public IEnumerable<IXmlFilePath> Enumerate_ChildXmlFilePaths(IDirectoryPath directoryPath)
         {
-            return _Platform.Enumerate_XmlFiles(directoryPath.Value)
+            return Instances.FileSystemOperator._Platform.Enumerate_XmlFiles(directoryPath.Value)
                 .To(x => x.ToXmlFilePath())
                 ;
         }
