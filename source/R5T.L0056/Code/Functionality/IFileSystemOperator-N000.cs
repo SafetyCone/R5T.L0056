@@ -25,6 +25,16 @@ namespace R5T.L0056.N000
 #pragma warning restore IDE1006 // Naming Styles
 
 
+        /// <inheritdoc cref="L0066.IFileSystemOperator.Copy_File(string, string)"/>
+        public void Copy_File(
+            string sourceFilePath,
+            string destinationFilePath)
+        {
+            this._Platform.Copy_File(
+                sourceFilePath,
+                destinationFilePath);
+        }
+
         public IEnumerable<IDirectoryPath> Enumerate_ChildDirectoryPaths(IDirectoryPath directoryPath)
         {
             var output = _Platform.Enumerate_ChildDirectoryPaths(
