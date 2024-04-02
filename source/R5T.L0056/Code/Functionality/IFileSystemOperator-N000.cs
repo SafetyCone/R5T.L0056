@@ -97,6 +97,12 @@ namespace R5T.L0056.N000
             return output;
         }
 
+        public bool Exists_Directory(string directoryPath)
+        {
+            var output = _Platform.Exists_Directory(directoryPath);
+            return output;
+        }
+
         public bool Exists_File(IFilePath filePath)
         {
             var output = _Platform.Exists_File(filePath.Value);
