@@ -24,7 +24,7 @@ namespace R5T.L0056
         {
             var output = Instances.FileNameOperator.Get_FileName(
                 assemblyFileNameStem,
-                Instances.FileExtensions.Dll,
+                Instances.FileExtensions.Assembly,
                 T0172.Extensions.StringExtensions.ToAssemblyFileName);
 
             return output;
